@@ -21,9 +21,10 @@ pond = input("\nWhat kind of pond do you like?  ")
 while (len(pond) == 0) :
     pond = input("Please enter the kind of pond you like:  ")
 
-number = input("\nEnter a number between 1 and 100:  ")
-while number.isdigit() and int(number) <= 0 or int(number) >= 100:
-   print("Invalid value.  Please enter a number between 1 and 100:  ")
+number = input("\nWhat is your favorite number:  ")
+while not number.isdigit() :
+        number = input("Value not recognized. What is your favorite number:  ")
+number = int(number)
 
 userName = input("\nWhat is your name?  ")
 while (len(userName) == 0) :
