@@ -31,7 +31,7 @@ while (len(userName) == 0) :
     userName = input("Please enter your name:  ")
 
 playAgain = "y"
-while playAgain.lower() == "y":
+while playAgain.lower() == "yes":
     print("\nLet the games begin!")
 
 
@@ -96,7 +96,7 @@ while playAgain.lower() == "y":
     print("\nTHE END!!!!")
 
 
-    playAgain = input("Do you want to play again? Please enter y or n:  ")
+    playAgain = input("Do you want to play again? Please enter yes or no:  ")
 
     print("\nThis game will self destruct in 60 seconds!")
     for seconds in range(60, 0, -1):
