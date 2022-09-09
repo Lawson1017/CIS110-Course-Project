@@ -1,9 +1,9 @@
 print("Hello there! I have an exciting story about a runaway dog. I can't wait to tell it.")
 print("Before the story begins, I have a few questions that I need you to answer.")
-print("After typing your answer, please press the enter key.")
 
+print("After typing your answer, please press the enter key. \n")
 
-print("\nPress the enter key to continue...")
+input("\nPress the enter key to continue...")
 
 breed = input("\nWhat Breed is the dog?  ")
 while (len(breed) == 0) :
@@ -33,19 +33,16 @@ while (len(userName) == 0) :
 
 
 
-
-
-
-print("\nLet's Roll!!!")
+print("\nLet the games begin!")
 
 
 print("\nOnce upon a time there was a" ,breed, "named" ,dogName + ".")
 
 print(dogName, "was left at the local shelter for the weekend while" ,userName, "went away.")
 
-print(dogName, "liked going for morning runs with its owner." ,dogName, "really wanted to go for a run, and  saw that the gate was accidently left open!")
+print(dogName, "liked going for morning runs." ,dogName, "really wanted to go for a run this sunny and warm day, and saw that the gate was accidently left open!")
 
-print(dogName, "ran out of the gate heading straight towards" ,town + ".")
+print(dogName, "ran out of the gate heading straight towards" ,town + "never looking back.")
 
 print("\nWhile walking down the street" ,dogName, "arrived at a nice looking",pond, "pond.")
 
