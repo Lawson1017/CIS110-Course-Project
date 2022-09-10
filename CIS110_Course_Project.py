@@ -30,7 +30,7 @@ userName = input("\nWhat is your name?  ")
 while (len(userName) == 0) :
     userName = input("Please enter your name:  ")
 
-playAgain = "y"
+playAgain = "yes"
 while playAgain.lower() == "yes":
     print("\nLet the games begin!")
 
@@ -41,7 +41,7 @@ while playAgain.lower() == "yes":
 
     print(dogName, "liked going for morning runs." ,dogName, "really wanted to go for a run this sunny and warm day, and saw that the gate was accidently left open!")
 
-    print(dogName, "ran out of the gate heading straight towards" ,town + "never looking back.")
+    print(dogName, "ran out of the gate heading straight towards" ,town, " never looking back.")
 
     print("\nWhile walking down the street" ,dogName, "arrived at a nice looking",pond, "pond.")
 
@@ -56,9 +56,9 @@ while playAgain.lower() == "yes":
         print(dogName, "runs off down the road before the police arrive.")
     else:
         print("\n" + dogName + " decides it is too risky to sneak into the " ,pond, "pond.")
-        print("Being too afraid of getting caught, the dog sees a sprinkler at a nearby house and lays in the puddle on the sidewalk for " ,number, "minutes before the sprinkler automatically turns off, forcing the dog to leave.")
+        print("Being too afraid of getting caught, the dog sees a sprinkler at a nearby house and lays in the puddle on the sidewalk for ",number, "minutes before the sprinkler automatically turns off, forcing the dog to leave.")
 
-    print("\nAfter a hot long day exploring " ,town,"," ,dogName,  "comes across a family cookout in the park.")
+    print("\nAfter a hot long day exploring" ,town,"," ,dogName,  "comes across a family cookout in the park.")
     print(dogName, "had played and cooled off, and now the dog was very hungry!")
 
     checkOutCookout = input("\nShould " + str(dogName) + " check out the cookout?  Type yes or no?  ")
@@ -73,18 +73,18 @@ while playAgain.lower() == "yes":
         print(dogName, "decides to just keep on walking hoping that no one notices, " ,dogName, "does not want to make a scene.")
 
     if sneakIntoPond == "yes" and checkOutCookout == "yes":
-        print("\nAfter spending a very adventurous day in " ,town, "," ,dogName, "was caught by the police.")
-        print("Luckily, the police officer noticed the name " ,userName, "on the dogs collar tag and remebered the kennel calling in for a runaway dog.")
-        print(dogName, "was successfully returned to the kennelwith a full belly!")
+        print("\nAfter spending a very adventurous day in",town, "," ,dogName, "was caught by the police.")
+        print("Luckily, the police officer noticed the name ",userName, "on the dogs collar tag and remebered the kennel calling in for a runaway dog.")
+        print(dogName, "was successfully returned to the kennel with a full belly!")
 
     elif sneakIntoPond == "yes" and checkOutCookout == "no":
-        print("\nAfter spending a day in " ,town, "," ,dogName, "was caught by the police.")
+        print("\nAfter spending a day in" ,town, "," ,dogName, "was caught by the police.")
         print("Luckily, the police noticed " ,userName, "was printed on the dogs collar, and the dog was returned to the kennel successfully.")
-        print("Surprisingly, the police did not realize that is was infact " ,dogName, " that trampled the homeowners prized rose garden!")
+        print("Surprisingly, the police did not realize that is was infact" ,dogName, " that trampled the homeowners prized rose garden!")
 
     elif sneakIntoPond == "no" and checkOutCookout == "yes":
         print(dogName, "Spent a wonderful day in the city." ,dogName, "played with the children at the cookout, ate lots and lots of food, and took a wonderful nap before someone realized that ",dogName, "did not belong to anyone at the cookout.")
-        print("so, the called the police and held the dog until the police arrived. The family members told the police office that" ,dogName, "was very well behaved and pointe dout his owners name on his collar. The police officer returned" ,dogName, "to teh kennel where " ,userName, "was waiting for him.")
+        print("so, they called the police and held" ,dogName, "until the police arrived. The family members told the police office that" ,dogName, "was very well behaved and pointe dout the owners name on the collar. The police officer returned" ,dogName, "to the kennel where " ,userName, "was waiting to take the dog home.")
         print(dogName, "Knew that" ,userName, "was very angry, but," ,dogName, "did have a really great day!")
 
     else: 
